@@ -122,7 +122,7 @@ data:
           data_size_gb: 20
           backup_size_gb: 20  
           transactionlog_size_gb: 20
-        state: installed
+        state: removed
 
       - name: db2wh
         description: Db2 Warehouse
@@ -251,7 +251,7 @@ data:
       - name: watson-openscale
         description: Watson OpenScale
         size: small
-        state: removed
+        state: installed
 
       - name: watson-speech
         description: Watson Speech (STT and TTS)
@@ -369,7 +369,7 @@ data:
 
       - name: watsonx_governance
         description: watsonx.governance
-        state: installed
+        state: removed
         installation_options:
           installType: all
           enableFactsheet: true
@@ -441,7 +441,7 @@ data:
         description: Watson Studio Runtimes
         runtimes:
         - ibm-cpd-ws-runtime-241-py
-        - ibm-cpd-ws-runtime-231-py
+        #- ibm-cpd-ws-runtime-231-py
         #- ibm-cpd-ws-runtime-241-pygpu
         #- ibm-cpd-ws-runtime-231-pygpu
         #- ibm-cpd-ws-runtime-241-r
