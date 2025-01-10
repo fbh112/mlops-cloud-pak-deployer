@@ -122,7 +122,7 @@ data:
           data_size_gb: 20
           backup_size_gb: 20  
           transactionlog_size_gb: 20
-        state: removed
+        state: installed
 
       - name: db2wh
         description: Db2 Warehouse
@@ -130,7 +130,7 @@ data:
 
       - name: dmc
         description: Db2 Data Management Console
-        state: removed
+        state: installed
         instances:
         - name: data-management-console
           description: Data Management Console
@@ -435,7 +435,7 @@ data:
 
       - name: ws-pipelines
         description: Watson Studio Pipelines
-        state: removed
+        state: installed
 
       - name: ws-runtimes
         description: Watson Studio Runtimes
